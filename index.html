@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Hero</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+    <div class="logo">Portfolio<span class="dot">.</span></div>
+    <div class="menu-toggle" id="menu-toggle">
+    ☰
+    </div>
+    <nav class="nav-links" id="nav-links">
+        <ul>
+            <li><a href="#">Home<span class="dot">.</span></a></li>
+            <li><a href="#">About<span class="dot">.</span></a></li>
+            <li><a href="#">Skills<span class="dot">.</span></a></li>
+            <li><a href="#">Works<span class="dot">.</span></a></li>
+            <li><a href="#">Contact<span class="dot">.</span></a></li>
+        </ul>
+    </nav>
+    </header><br>
+
+    <section class="hero">
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <div class="line"></div>
+    </div>
+
+    <div class="hero-img-container">
+        <h1 class="hero-name">Eduardo <span class="highlight">Ealo</span></h1>
+        <img src="img/Eduardo.jpg" alt="John Doe" class="hero-img">
+    </div>
+
+    </section><br>
+
+    <section class="about-section" id="About">
+    <div class="about-left">
+        <div class="vertical-text">ABOUT ME</div>
+        <h2>Who I am?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, repellendus!</p>
+        </div>
+        <div class="about-right">
+        <p>
+            Hi! I’m <strong>Jhon Doe</strong> and I’m a developer who has passion for building clean web applications with intuitive functionalities. I enjoy the process of turning ideas into reality using creative solutions. I’m always curious about learning new skills, tools, and concepts. In addition to working on various solo full stack projects, I have worked with creative teams, which involves daily stand-ups and communications, source control, and project management.
+        </p>
+        <a href="./img/Full Stack junior.pdf" class="btn">DOWNLOAD CV</a>
+    </div>
+    </section><br>
+
+    <section class="skills-section">
+    <div class="skills-left">
+        <div class="vertical-text">MY SKILLS</div>
+        <h2>My Programming <br />Skills</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, repellendus!</p>
+    </div>
+    <div class="skills-right">
+        <div class="icons-grid">
+            <img src="img/html-5.png" alt="HTML5">
+            <img src="img/css-3.png" alt="CSS3">
+            <img src="img/js.png" alt="JavaScript">
+            <img src="img/python.png" alt="Python">
+            <img src="img/java.png" alt="Java">
+            <img src="img/nest.png" alt="Nest.js">
+            <img src="img/react.png" alt="Next.js">
+            <img src="img/redux.png" alt="Redux">
+            <img src="img/express.png" alt="Express.js">
+            <img src="img/node.js.png" alt="Node.js">
+            <img src="img/mongodb (2).png" alt="MongoDB">
+            <img src="img/mysql.png" alt="MySQL">
+            <img src="img/git.png" alt="Git">
+            <img src="img/github.png" alt="GitHub">
+            <img src="img/docker.png" alt="Docker">
+            <img src="img/postman.png" alt="Postman">
+            
+        </div>
+    </div>
+    </section><br>
+
+    <section class="works-section">
+    <div class="works-left">
+        <div class="vertical-text">MY WORKS</div>
+        <h2>See My Works</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, repellendus!</p>
+    </div>
+
+    <div class="works-gallery">
+        <div class="main-project">
+        <img src="img/1.jpeg" alt="Main Project">
+        <p class="caption">Music Player<br><small>using ReactJS & TailwindCSS</small></p>
+        <a href="#" class="source-link">Source code<span class="dot">.</span></a>
+        </div>
+
+        <div class="image-grid">
+        <img src="img/2.jpg" alt="Work 1">
+        <img src="img/3.jpg" alt="Work 2">
+        <img src="img/4.webp" alt="Work 3">
+        <img src="images/work4.jpg" alt="Work 4">
+        <a href="#" class="see-more">See More<span class="dot">.</span></a>
+        </div>
+    </div>
+    </section><br>
+
+    <section class="contact-section">
+    <div class="contact-left">
+        <div class="vertical-text">CONTACT</div>
+        <h2>Have You Any Project?<br> Please Drop a Message</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, repellendus!</p>
+    </div>
+    <div class="contact-right">
+            <form class="contact-form" onsubmit="sendToWhatsApp(event)">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+
+            <label for="email">Correo:</label>
+            <input type="email" id="email" name="email" placeholder="Tu correo" required />
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tu mensaje" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+    </div>
+    </section>
+
+    <footer class="footer">
+    <p>© 2024 Porfolio. All rights reserved</p>
+    </footer>
+</body>
+</html>
+
+<script src="script.js"></script>
+
+<script>
+    const toggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    toggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
+</script>
