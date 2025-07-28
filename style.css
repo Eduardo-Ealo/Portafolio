@@ -94,7 +94,7 @@ body {
 }
 
 .hero-name {
-    font-size: 100px;
+    font-size: 50px;
     font-weight: bold;
     position: relative;
     z-index: 1;
@@ -183,70 +183,72 @@ body {
 /* LADO IZQUIERDO DE SECCIONES */
 .about-left,
 .skills-left,
+.works-left,
 .contact-left {
-  max-width: 300px;
+    max-width: 300px;
 }
 
 .vertical-text {
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  letter-spacing: 2px;
-  color: #aaa;
-  font-size: 12px;
-  margin-bottom: 20px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    letter-spacing: 2px;
+    color: #aaa;
+    font-size: 12px;
+    margin-bottom: 20px;
 }
 
 .about-left h2,
 .skills-left h2,
+.works-left h2,
 .contact-left h2 {
-  font-size: 28px;
-  font-weight: bold;
-  margin: 10px 0;
-}
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px 0;
+    }
 
 .about-left p,
 .skills-left p,
 .contact-left p {
-  font-size: 14px;
-  color: #bbb;
+    font-size: 14px;
+    color: #bbb;
 }
 
 /* ABOUT RIGHT */
 .about-right {
-  max-width: 600px;
+    max-width: 600px;
 }
 
 .about-right p {
-  font-size: 14px;
-  line-height: 1.6;
-  color: #ccc;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ccc;
 }
 
 .about-right strong {
-  color: #fff;
+    color: #fff;
 }
 
 /* SKILLS RIGHT */
 .skills-right {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .icons-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 50px);
-  gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    gap: 20px;
 }
 
 .icons-grid img {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-  transition: transform 0.3s ease;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
 }
 
 .icons-grid img:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 /* BOTÓN GENERAL */
@@ -275,7 +277,14 @@ body {
 }
 .about-section {
     margin-left: 20px;
+    gap: 50px;
 }
+
+.works-section {
+    gap: 50px;
+}
+
+
 
 
 .works-left {
@@ -344,7 +353,6 @@ body {
 
 .image-grid img {
     width: 120px;
-    height: 80px;
     object-fit: cover;
     border-radius: 8px;
 }
@@ -447,6 +455,7 @@ body {
     .about-section,
     .skills-section,
     .contact-section,
+    .works-section,
     .about-section {
         flex-direction: column;
         align-items: center;
