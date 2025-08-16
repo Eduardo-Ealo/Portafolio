@@ -12,6 +12,12 @@ body {
     overflow-x: hidden;
 }
 
+.social-icons img {
+    width: 35px; 
+    height: auto;
+    cursor: pointer;
+}
+
 /* NAVBAR */
 .navbar {
     display: flex;
