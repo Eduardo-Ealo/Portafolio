@@ -7,7 +7,7 @@ function sendToWhatsApp(event) {
 
     const phoneNumber = "+573006463013"; // ✅ Reemplaza con tu número real (sin espacios, con código país)
     
-    const whatsappMessage = `Hola, soy *${name}* (%0AEmail: ${email})%0A%0AMensaje:%0A${message}`;
+    const whatsappMessage = `Hola, soy *${name}* (Email: ${email})Mensaje:${message}`;
     const url = `https://wa.me/${phoneNumber}?text=${encodeURI(whatsappMessage)}`;
 
     window.open(url, "_blank");
