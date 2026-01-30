@@ -10,33 +10,33 @@
 </head>
 <body>
     <header class="navbar">
-    <div class="logo">Portfolio<span class="dot">.</span></div>
+    <div class="logo">Portafolio<span class="dot">.</span></div>
     <div class="menu-toggle" id="menu-toggle">
     ☰
     </div>
-    <nav class="nav-links" id="nav-links">
+    <nav class="nav-links">
         <ul>
-            <li><a href="#">Home<span class="dot">.</span></a></li>
-            <li><a href="#">About<span class="dot">.</span></a></li>
-            <li><a href="#">Skills<span class="dot">.</span></a></li>
-            <li><a href="#">Works<span class="dot">.</span></a></li>
-            <li><a href="#">Contact<span class="dot">.</span></a></li>
+            <li><a href="#Home">Home<span class="dot">.</span></a></li>
+            <li><a href="#About">About<span class="dot">.</span></a></li>
+            <li><a href="#Skills">Skills<span class="dot">.</span></a></li>
+            <li><a href="#Works">Works<span class="dot">.</span></a></li>
+            <li><a href="#Contact">Contact<span class="dot">.</span></a></li>
         </ul>
     </nav>
     </header><br>
 
-    <section class="hero">
+    <section class="hero" id="Home">
     <div class="social-icons">
-        <a href="#"><img src="./img/github-.png" alt="Github"></a>
-        <a href="#"><img src="./img/linkedin.png" alt="Linkedin"></a>
-        <a href="https://api.whatsapp.com/send?phone=3006463013&text=%C2%A1Buen%20dia%20Eduardo!%20Soy"><img src="./img/whatsapp.png" alt="Whatsapp"></a>
+        <a href="#" target="_blank"><img src="./img/github-.png" alt="Github"></a>
+        <a href="https://www.linkedin.com/in/eduardo-ealo" target="_blank"><img src="./img/linkedin.png" alt="LinkedIn"></a>
+        <a href="https://api.whatsapp.com/send?phone=3006463013&text=%C2%A1Buen%20dia%20Eduardo!%20Soy" target="_blank"><img src="./img/whatsapp.png" alt="Whatsapp"></a>
         
         <div class="line"></div>
     </div>
 
     <div class="hero-img-container">
         <h1 class="hero-name">Eduardo <span class="highlight">Ealo</span></h1>
-        <img src="img/Eduardo.jpg" alt="John Doe" class="hero-img">
+        <img src="img/Eduardo.jpg" alt="Eduardo Ealo" class="hero-img">
     </div>
 
     </section><br>
@@ -55,7 +55,7 @@
     </div>
     </section><br>
 
-    <section class="skills-section">
+    <section class="skills-section" id="Skills">
     <div class="skills-left">
         <div class="vertical-text">MIS HABILIDADES</div>
         <h2>Mis Habilidades en Programación</h2>
@@ -68,9 +68,7 @@
             <img src="img/js.png" alt="JavaScript">
             <img src="img/python.png" alt="Python">
             <img src="img/java.png" alt="Java">
-            <img src="img/nest.png" alt="Nest.js">
             <img src="img/react.png" alt="Next.js">
-            <img src="img/redux.png" alt="Redux">
             <img src="img/aws.png" alt="AWS">
             <img src="img/express.png" alt="Express.js">
             <img src="img/node.js.png" alt="Node.js">
@@ -81,12 +79,13 @@
             <img src="img/docker.png" alt="Docker">
             <img src="img/postman.png" alt="Postman">
             <img src="img/power-bi.png" alt="Power bi">
+            <img src="img/SQL.png" alt="SQL">
             
         </div>
     </div>
     </section><br>
 
-    <section class="works-section">
+    <section class="works-section" id="Works">
     <div class="works-left">
         <div class="vertical-text">MIS PROYECTOS</div>
         <h2>Explora Mis Proyectos</h2>
@@ -110,7 +109,7 @@
     </div>
     </section><br>
 
-    <section class="contact-section">
+    <section class="contact-section" id="Contact">
     <div class="contact-left">
         <div class="vertical-text">CONTACTO</div>
         <h2>¿Tienes algún proyecto? Hablemos</h2>
@@ -141,10 +140,11 @@
 <script src="script.js"></script>
 
 <script>
-    const toggle = document.getElementById("menu-toggle");
-    const navLinks = document.getElementById("nav-links");
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
 
-    toggle.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-    });
+    toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
 </script>
