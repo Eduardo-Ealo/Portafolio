@@ -25,11 +25,18 @@ p{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 10px 30px;
     background-color: #1a1a1a;
     position: sticky;
     top: 0;
     z-index: 999;
+}
+
+.navbar img {
+    width: 70px;
+    height: 60px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
 }
 
 .logo {
@@ -239,10 +246,12 @@ p{
 
 .icons-grid img {
     width: 40px;
-    height: 40px;
+    
     object-fit: contain;
     transition: transform 0.3s ease;
 }
+
+
 
 .icons-grid img:hover {
     transform: scale(1.1);
